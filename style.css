@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Yellowtail&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 2rem;
+    min-height: 100vh;
+    background-color: grey;
+    font-family: 'Redressed', cursive;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: snow;
+    font-size: 50px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* the next line will make sure that the element is centered succssfully */
+    transform: translate(-50%, -50%);
+}
+
+
+/* Image container */
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    margin-top: 5px;
+    width: 100%;
+}   
+
+
+
+/* To be Responsive for all screen */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 35px;
+    }
+    .image-container {
+        margin: 10px;
+    }
+}
